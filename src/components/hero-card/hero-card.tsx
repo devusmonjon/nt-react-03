@@ -15,8 +15,8 @@ const HeroCard = ({ title, list, img, name, desc, color, btnTxt }: IHero) => {
             index === 0 ? (
               <li key={item}>
                 <button
-                  className={`font-semibold text-xl border-b-2 border-black pb-1`}
-                  style={{ color }}
+                  className={`font-semibold text-xl border-b-2 pb-1`}
+                  style={{ color, borderColor: color; }}
                 >
                   {item}
                 </button>
@@ -24,7 +24,7 @@ const HeroCard = ({ title, list, img, name, desc, color, btnTxt }: IHero) => {
             ) : (
               <li key={item}>
                 <button
-                  className={`font-semibold text-xl border-b-2 border-transparent hover:border-black pb-1`}
+                  className={`font-semibold text-xl border-b-2 border-transparent pb-1`}
                   style={{ color }}
                 >
                   Top Deals
